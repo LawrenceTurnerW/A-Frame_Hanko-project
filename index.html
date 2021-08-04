@@ -26,15 +26,21 @@
       <a-image width="2.5" height="2" rotation="-90 0 0" position="0 0 0" src="./img/meishi.png"></a-image>
     </a-marker>
 
+    <a-marker type="pattern" url="./maker/pattern-test.patt">
+      <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
+      <a-image width="2.5" height="2" rotation="-90 0 0" position="0 0 0" src="./img/meishi.png"></a-image>
+    </a-marker>
+
     <!-- マーカーを登録（プリセットされている「人」マーカー） -->
     <a-marker preset="kanji">
-      <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
+      <a-image width="2.5" height="2" rotation="-90 0 0" position="0 0 0" src="./img/meishi.png"></a-image>
+      <!-- マーカーの場所に OBJ 形式の 3DCG を置く 
       <a-obj-model
         src="#obj"
         mtl="#mtl"
         scale="0.005 0.005 0.005"
         position="0 0.5 0"
-        animation="property:rotation; from:0 0 0; to:0 360 0; dur:3000; easing:linear; loop:true;">
+        animation="property:rotation; from:0 0 0; to:0 360 0; dur:3000; easing:linear; loop:true;">-->
       </a-obj-model>
     </a-marker>
 
