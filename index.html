@@ -16,12 +16,12 @@
 
     <!-- OBJ形式のCGモデルの読み込み -->
     <a-assets>
-      <a-asset-item id="obj" src="Iphone.obj"></a-asset-item>   <!-- objファイル -->
-      <a-asset-item id="mtl" src="Iphone.mtl"></a-asset-item>   <!-- mtlファイル -->
+      <a-asset-item id="obj" src="./object/Iphone.obj"></a-asset-item>   <!-- objファイル -->
+      <a-asset-item id="mtl" src="./object/Iphone.mtl"></a-asset-item>   <!-- mtlファイル -->
     </a-assets>
 
     <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
-    <a-marker preset="hiro">
+    <a-marker type="pattern" url="./maker/pattern-watanabe.patt">
       <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
       <a-image width="2.5" height="2" rotation="-90 0 0" position="0 0 0" src="./img/meishi.png"></a-image>
     </a-marker>
